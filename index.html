@@ -1,83 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Produtos Akmos - Linha Akbody</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f4fc;
       margin: 0;
       padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(102, 0, 153, 0.15);
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 30px;
+      border-bottom: 2px solid #660099;
+    }
+    header h1 {
+      font-size: 2.8em;
+      color: #660099;
+      margin-bottom: 5px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #5e0080;
+      font-style: italic;
     }
     .produto {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      border: 1px solid #ccc;
+      border: 1px solid #ddd;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin: 30px 0;
+      background-color: #faf8ff;
+      box-shadow: 0 3px 7px rgba(102, 0, 153, 0.1);
+      transition: transform 0.3s ease;
     }
-    .produto img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
+    .produto:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(102, 0, 153, 0.2);
+    }
+    .produto h2 {
+      color: #660099;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .produto h2 span {
+      font-size: 1.3em;
+      margin-right: 10px;
     }
     .descricao {
-      margin-top: 20px;
+      font-size: 1.1em;
+      color: #4a4a4a;
     }
-    .descricao h2 {
-      margin-bottom: 10px;
+    .descricao strong {
       color: #660099;
     }
-    .descricao p {
+    footer {
+      text-align: center;
+      background-color: #660099;
+      color: #fff;
+      padding: 25px 20px;
+      margin-top: 50px;
+      border-radius: 0 0 12px 12px;
+    }
+    footer p {
+      margin: 5px 0;
       font-size: 1.1em;
-      line-height: 1.5;
+    }
+    footer a {
+      color: #ffd6ff;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px 10px;
+        padding: 15px;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+      .produto h2 {
+        font-size: 1.4em;
+      }
+      .descricao {
+        font-size: 1em;
+      }
+      footer p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>Produtos Akmos - Linha Akbody</h1>
+      <p>Seu programa completo para emagrecimento saudável e bem-estar</p>
+    </header>
 
-  <!-- Carbo Fire -->
-  <div class="produto">
-    <img src="carbo-fire.jpg" alt="Carbo Fire">
-    <div class="descricao">
-      <h2>Carbo Fire</h2>
-      <p><strong>Controle da absorção e compulsão alimentar</strong></p>
-      <p>Reduz a absorção de carboidratos e gorduras, aumenta a saciedade e ajuda no controle da vontade de comer doces, um apoio essencial para o equilíbrio emocional!</p>
-    </div>
+    <section class="produto">
+      <h2><span>🍵</span> Body Tea</h2>
+      <p class="descricao">
+        <strong>Chá Detox Natural:</strong> combina ervas cuidadosamente selecionadas para ativar o metabolismo, eliminar toxinas e reduzir o inchaço. Ideal para começar sua rotina de emagrecimento com mais leveza e disposição.
+      </p>
+    </section>
+
+    <section class="produto">
+      <h2><span>🔥</span> Carbo Fire</h2>
+      <p class="descricao">
+        <strong>Controle da absorção de carboidratos:</strong> ajuda a reduzir a absorção de carboidratos e gorduras, além de promover maior saciedade. Indicado para quem busca controlar a compulsão alimentar e manter o equilíbrio emocional.
+      </p>
+    </section>
+
+    <section class="produto">
+      <h2><span>🍬</span> Moro Gummy</h2>
+      <p class="descricao">
+        <strong>Gummy para redução de gordura localizada:</strong> com extrato de laranja moro e Red Capsicare®, atua diretamente na queima da gordura abdominal, facilitando a perda de medidas com sabor e praticidade.
+      </p>
+    </section>
+
+    <section class="produto">
+      <h2><span>⚡</span> Pro Vit</h2>
+      <p class="descricao">
+        <strong>Suplemento termogênico natural:</strong> combinação de triptofano, café verde e laranja moro que acelera o metabolismo, melhora o humor e auxilia no controle da fome emocional.
+      </p>
+    </section>
+
+    <section class="produto">
+      <h2><span>💪</span> Pro Energy</h2>
+      <p class="descricao">
+        <strong>Pré-treino energizante:</strong> composto por cafeína, óleo de cártamo e vitaminas que aumentam a disposição e a performance para seus treinos, garantindo mais foco e energia durante o dia.
+      </p>
+    </section>
+
+    <section class="produto">
+      <h2><span>🥤</span> Nutri Shake+</h2>
+      <p class="descricao">
+        <strong>Shake nutritivo completo:</strong> rico em colágeno, whey protein e fibras, ideal para substituir refeições de forma prática e saudável. Disponível nos sabores chocolate e baunilha para agradar todos os gostos.
+      </p>
+    </section>
+
+    <section class="produto">
+      <h2><span>🧴</span> Shaker Ak Body</h2>
+      <p class="descricao">
+        <strong>Praticidade na preparação:</strong> garrafa shaker especialmente desenvolvida para facilitar o preparo dos seus shakes em qualquer lugar, com design moderno e tampa segura.
+      </p>
+    </section>
+
+    <section class="produto">
+      <h2><span>📅</span> Tableteira Ak Body</h2>
+      <p class="descricao">
+        <strong>Organização diária:</strong> tableteira prática para organizar sua suplementação diária, garantindo que você não esqueça nenhum produto durante a sua rotina.
+      </p>
+    </section>
+
+    <section class="produto">
+      <h2><span>📘</span> Cartilha Ak Body</h2>
+      <p class="descricao">
+        <strong>Guia completo de orientações:</strong> cartilha com dicas, receitas e orientações nutricionais para potencializar seus resultados, com foco em alimentação equilibrada e hábitos saudáveis.
+      </p>
+    </section>
+
+    <footer>
+      <p>📞 Contato via WhatsApp: <a href="https://wa.me/5562981304152" target="_blank" rel="noopener noreferrer">62 98130-4152</a></p>
+      <p>📸 Instagram: <a href="https://instagram.com/gislane03" target="_blank" rel="noopener noreferrer">@gislane03</a></p>
+      <p>© 2025 Produtos Akmos - Todos os direitos reservados</p>
+    </footer>
   </div>
-
-  <!-- Pro Vit -->
-  <div class="produto">
-    <img src="pro-vit.jpg" alt="Pro Vit">
-    <div class="descricao">
-      <h2>Pro Vit</h2>
-      <p><strong>Queima de gordura e equilíbrio metabólico</strong></p>
-      <p>Com laranja moro, café verde e triptofano, o PRO VIT acelera a queima de gordura e atua no controle da fome emocional.</p>
-    </div>
-  </div>
-
-  <!-- Moro Gummy -->
-  <div class="produto">
-    <img src="moro-gummy.jpg" alt="Moro Gummy">
-    <div class="descricao">
-      <h2>Moro Gummy</h2>
-      <p><strong>Redução de medidas e gordura localizada</strong></p>
-      <p>Com Red Capsicare® e Laranja Moro, promove queima de gordura abdominal com praticidade e resultados visíveis!</p>
-    </div>
-  </div>
-
-  <!-- Body Tea -->
-  <div class="produto">
-    <img src="body-tea.jpg" alt="Body Tea">
-    <div class="descricao">
-      <h2>Body Tea</h2>
-      <p><strong>Limpeza e aceleração metabólica</strong></p>
-      <p>O BODY TEA ativa o metabolismo, elimina toxinas e reduz o inchaço com efeito detox. É o primeiro passo para iniciar a queima de gordura de forma eficaz!</p>
-    </div>
-  </div>
-
 </body>
 </html>
